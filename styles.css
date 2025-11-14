@@ -1,0 +1,153 @@
+:root {
+  --bg: #f7f7f7;
+  --bg-alt: #ffffff;
+  --text: #222222;
+  --muted: #555555;
+  --accent: #0050ff;
+  --accent-soft: rgba(0, 80, 255, 0.08);
+  --border: #e0e0e0;
+  --max-width: 800px;
+  --radius: 14px;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(247, 247, 247, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0;
+}
+
+.logo a {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--muted);
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  transition: 0.15s;
+}
+
+.nav-links a:hover {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* Hero */
+.hero {
+  padding: 3rem 0 2rem;
+}
+
+.hero-text h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.tagline {
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+/* Sections */
+.section {
+  padding: 2rem 0;
+}
+
+.section:nth-of-type(odd) {
+  background: var(--bg-alt);
+}
+
+.section h2 {
+  margin-top: 0;
+}
+
+.list-simple {
+  padding-left: 1.2rem;
+}
+
+/* Contact block */
+.contact-block {
+  margin-top: 1rem;
+  padding: 1rem 1.1rem;
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.contact-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-block li {
+  margin-bottom: 0.4rem;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0 2rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Links */
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    gap: 0.4rem;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}
