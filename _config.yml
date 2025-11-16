@@ -1,0 +1,16 @@
+title: "Amulya Saxena"
+description: "AI Agents • ML Systems • Data Science"
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+header_pages:
+  - blog.md
+  - projects.md
+  - reading.md
+  - scuba.md
+  - contact.md
+
+show_excerpts: true
