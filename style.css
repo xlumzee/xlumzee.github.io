@@ -1,3 +1,10 @@
+:root {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
+}
+
 /* ============================= */
 /* THEME VARIABLES */
 /* ============================= */
@@ -9,8 +16,8 @@ html {
 }
 
 html.dark {
-  --bg: #161616;
-  --fg: #e8e8e8;
+  --bg: #111111;
+  --fg: #f1f1f1;
   --link: #82aaff;
 }
 
@@ -19,8 +26,8 @@ html.dark {
 /* ============================= */
 
 body {
-  background: var(--bg) !important;
-  color: var(--fg) !important;
+  background: var(--bg);
+  color: var(--fg);
   font-family:
     ui-sans-serif,
     -apple-system,
