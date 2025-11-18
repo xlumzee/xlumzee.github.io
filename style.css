@@ -9,7 +9,7 @@ html {
 }
 
 html.dark {
-  --bg: #111111;
+  --bg: #161616;
   --fg: #e8e8e8;
   --link: #82aaff;
 }
@@ -19,8 +19,8 @@ html.dark {
 /* ============================= */
 
 body {
-  background: var(--bg);
-  color: var(--fg);
+  background: var(--bg) !important;
+  color: var(--fg) !important;
   font-family:
     ui-sans-serif,
     -apple-system,
